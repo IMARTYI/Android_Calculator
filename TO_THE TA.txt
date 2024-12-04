@@ -1,0 +1,43 @@
+David Martin
+6995948
+
+This is a rundown of the Calculator Assingment.
+
+
+1. implemented the memory feature.
+	- Pressing S will save the current number on the text field and present it at the top of the screen.
+	- Pressing R will make that number an operand and put that number as the current working value.
+
+2. Implemented the Decimal Key.
+	- Pressing "." wil make acomodate for floating point numbers.
+
+3. Implemented the negative key
+	- Pressing the ± will make the current working opperand into a negative number.
+	-  a-(-b) = -a +b
+
+
+
+> Basic operations are implemented fully.
+> when pressing the operator, the main view will clear waiting for the second operator.
+> Code is fully commented.
+> Pressing two operators in a row will simply replace the operator.
+	3+* = 3*
+
+> Pressing operator after pressing operand, operator, and operand will compute the result of the first expression.\
+
+> Pressing operand and then equaul will simply return the number that is currently on the display.
+
+> Pressing  "C" will clear both digits and an operators.
+
+>Pressing "AC" will clear all operands and operators.
+
+>Dvision by zero will display an error message.
+
+>Landscape mode is fully operational and remebers the state of the program when rotated.
+
+
+Thank you.
+
+
+
+

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/reuslt_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/zero"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        app:layout_constraintTop_toBottomOf="@+id/RecallValue"
+         />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/RecallValue"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:gravity="left"
+        android:text="@string/RecalledValue"
+        android:textColor="@color/redish"
+        android:textSize="46sp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/reuslt_display"
+        >
+        <Button
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:id="@+id/Negative"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="26sp"
+            android:text="@string/negative"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/orangeish"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/Seven"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/seven"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/eight"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/nine"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/addition"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="@string/addition"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/four"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/four"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/five"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/six"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/six"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/subtract"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="@string/subtract"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/one"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/one"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/two"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/three"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="@string/multiply"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/zero"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/decimal"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/greenish"
+                android:text="@string/decimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+
+            <Button
+                android:id="@+id/Save"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="S"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/Divide"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="@string/division"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/equals"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/orangeish"
+                android:text="@string/equal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/Restore"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="R"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/Correct"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/blueish"
+                android:text="C"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/All_Clear"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="@color/redish"
+                android:text="@string/clear"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
