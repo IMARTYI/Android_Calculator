@@ -1,0 +1,1 @@
+An introductory project to explore the Android development environment and understand the basics of User Interface (UI) design using XML.,Android Activity lifecycle and interaction and Event handling for user input.
